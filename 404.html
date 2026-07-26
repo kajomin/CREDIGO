@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Stránka nenalezena — Credigo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#EEF0EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1C17" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #EEF0EA; --bg-raised: #E4E7DD; --text: #14231F; --text-soft: #4B5850;
+    --line: rgba(20,35,31,0.16); --line-strong: rgba(20,35,31,0.28);
+    --accent: #86601F; --accent-strong: #6E4A18; --accent-on: #FBF6EC;
+    --serif: 'Iowan Old Style', 'Sitka Text', Georgia, 'Noto Serif', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --mono: 'SF Mono', 'Cascadia Mono', Consolas, 'Roboto Mono', monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1C17; --bg-raised: #162720; --text: #E9EBE3; --text-soft: #A7B2A9; --line: rgba(233,235,227,0.14); --line-strong: rgba(233,235,227,0.24); --accent: #D4A54A; --accent-strong: #E6BC66; --accent-on: #14231F; }
+  }
+  :root[data-theme="dark"] { --bg: #0F1C17; --bg-raised: #162720; --text: #E9EBE3; --text-soft: #A7B2A9; --line: rgba(233,235,227,0.14); --line-strong: rgba(233,235,227,0.24); --accent: #D4A54A; --accent-strong: #E6BC66; --accent-on: #14231F; }
+  :root[data-theme="light"] { --bg: #EEF0EA; --bg-raised: #E4E7DD; --text: #14231F; --text-soft: #4B5850; --line: rgba(20,35,31,0.16); --line-strong: rgba(20,35,31,0.28); --accent: #86601F; --accent-strong: #6E4A18; --accent-on: #FBF6EC; }
+
+  * { box-sizing: border-box; }
+  html { color-scheme: light dark; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    padding: 40px 24px;
+  }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .code { font-family: var(--mono); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(28px, 5vw, 42px); margin: 0 0 16px; text-wrap: balance; }
+  p { color: var(--text-soft); max-width: 46ch; margin: 0 0 32px; font-size: 16px; }
+  .ledger { border: 1px solid var(--line-strong); background: var(--bg-raised); display: inline-flex; flex-direction: column; min-width: 280px; margin-bottom: 32px; }
+  .ledger a { display: flex; justify-content: space-between; gap: 16px; padding: 14px 20px; text-decoration: none; color: var(--text); border-bottom: 1px solid var(--line); font-size: 14.5px; transition: color .15s; }
+  .ledger a:last-child { border-bottom: none; }
+  .ledger a:hover { color: var(--accent); }
+  .ledger a .arrow { color: var(--accent); font-family: var(--mono); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14.5px; font-weight: 600; padding: 11px 22px; border-radius: 2px; cursor: pointer; text-decoration: none; background: var(--accent); color: var(--accent-on); transition: background .15s; }
+  .btn:hover { background: var(--accent-strong); }
+</style>
+</head>
+<body>
+
+<div class="code">Chyba 404</div>
+<h1>Tuhle stránku jsme nenašli.</h1>
+<p>Odkaz je možná zastaralý nebo jste si adresu přepsali. Zkuste jednu z hlavních stránek, nebo se rovnou ozvěte.</p>
+
+<nav class="ledger">
+  <a href="index.html">Domů — pojištění pohledávek <span class="arrow">→</span></a>
+  <a href="bonding.html">Bonding — pojištění záruk <span class="arrow">→</span></a>
+  <a href="blog.html">Blog <span class="arrow">→</span></a>
+</nav>
+
+<a class="btn" href="index.html#kontakt">Kontaktovat Credigo</a>
+</body>
+</html>
