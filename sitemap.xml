@@ -126,4 +126,34 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://credigo.cz/ochrana-osobnich-udaju.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://credigo.cz/ochrana-osobnich-udaju.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://credigo.cz/ochrana-osobnich-udaju-en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://credigo.cz/ochrana-osobnich-udaju-de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://credigo.cz/ochrana-osobnich-udaju.html"/>
+  </url>
+  <url>
+    <loc>https://credigo.cz/ochrana-osobnich-udaju-en.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://credigo.cz/ochrana-osobnich-udaju.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://credigo.cz/ochrana-osobnich-udaju-en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://credigo.cz/ochrana-osobnich-udaju-de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://credigo.cz/ochrana-osobnich-udaju.html"/>
+  </url>
+  <url>
+    <loc>https://credigo.cz/ochrana-osobnich-udaju-de.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://credigo.cz/ochrana-osobnich-udaju.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://credigo.cz/ochrana-osobnich-udaju-en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://credigo.cz/ochrana-osobnich-udaju-de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://credigo.cz/ochrana-osobnich-udaju.html"/>
+  </url>
 </urlset>
