@@ -476,6 +476,7 @@
   .placeholder { color: var(--accent); font-style: normal; }
   #form-note { margin-top: 14px; font-size: 13.5px; color: var(--accent); display: none; }
   #form-note.show { display: block; }
+  .nf-hidden { position: absolute; left: -9999px; top: auto; }
 
   footer { padding: 40px 0 48px; }
   footer .wrap { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
@@ -950,7 +951,9 @@
       </div>
     </div>
     <div class="contact-grid reveal">
-      <form id="poptavka-form">
+      <form id="poptavka-form" name="poptavka-de" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="poptavka-de">
+        <p class="nf-hidden"><label>Lassen Sie dieses Feld leer, wenn Sie ein Mensch sind: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <div class="field-row">
           <div class="field"><label for="jmeno">Vor- und Nachname</label><input id="jmeno" name="jmeno" type="text" required></div>
           <div class="field"><label for="firma">Unternehmen</label><input id="firma" name="firma" type="text" required></div>
@@ -973,7 +976,7 @@
           <textarea id="zprava" name="zprava" placeholder="z. B. Anzahl der Schlüsselkunden, Branche, Export…"></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Anfrage senden</button>
-        <p id="form-note">Vielen Dank — wir haben Ihre Anfrage erhalten. (Das Formular ist noch nicht mit einem Backend verbunden — richten Sie den Versand an Ihre E-Mail oder Ihr CRM ein.)</p>
+        <p id="form-note">Vielen Dank — wir haben Ihre Anfrage erhalten. Wir melden uns so schnell wie möglich.</p>
       </form>
       <div class="contact-card">
         <h3 style="font-size:19px;">Credigo</h3>
@@ -1028,9 +1031,22 @@
 
   var form = document.getElementById('poptavka-form');
   var note = document.getElementById('form-note');
+  var noteSuccessText = note.textContent;
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    note.classList.add('show');
+    var body = new URLSearchParams(new FormData(form)).toString();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body
+    }).then(function () {
+      note.textContent = noteSuccessText;
+      note.classList.add('show');
+      form.reset();
+    }).catch(function () {
+      note.textContent = 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns eine E-Mail.';
+      note.classList.add('show');
+    });
   });
 
   (function () {
