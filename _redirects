@@ -6,6 +6,6 @@
 # Netlify redirects — canonicalize apex domain to www
 # Docs: https://docs.netlify.com/manage-deploys/redirects-and-rewrites/
 
-https://credio.cz/*  https://www.credio.cz/:splat  301!
-http://credio.cz/*   https://www.credio.cz/:splat  301!
-http://www.credio.cz/*  https://www.credio.cz/:splat  301!
+https://credigo.cz/*  https://www.credigo.cz/:splat  301!
+http://credigo.cz/*   https://www.credigo.cz/:splat  301!
+http://www.credigo.cz/*  https://www.credigo.cz/:splat  301!
