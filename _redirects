@@ -1,11 +1,8 @@
 # NOTE: this file only works on Netlify. If you deploy this site on
 # GitHub Pages instead, it is ignored — GitHub Pages has no redirect engine.
-# For a custom domain + www redirect on GitHub Pages, add a CNAME file
-# with your domain and configure the redirect at your DNS/registrar instead.
 #
-# Netlify redirects — canonicalize apex domain to www
-# Docs: https://docs.netlify.com/manage-deploys/redirects-and-rewrites/
-
-https://credigo.cz/*  https://www.credigo.cz/:splat  301!
-http://credigo.cz/*   https://www.credigo.cz/:splat  301!
-http://www.credigo.cz/*  https://www.credigo.cz/:splat  301!
+# Domain canonicalization (apex vs www) is handled by Netlify's own
+# Domain management settings, not here — credigo.cz is configured there
+# as the primary domain, with www.credigo.cz redirecting to it automatically.
+# Do NOT add apex/www redirect rules in this file: they fight Netlify's
+# built-in domain redirect and cause a redirect loop (ERR_TOO_MANY_REDIRECTS).
