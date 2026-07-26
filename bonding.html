@@ -589,6 +589,7 @@
       body: body
     }).then(function () {
       note.textContent = noteSuccessText;
+      if (typeof gtag === 'function') { gtag('event', 'conversion', {'send_to': 'AW-18351684112/ZpMTCLvSgdccEJD04a5E'}); }
       note.classList.add('show');
       form.reset();
     }).catch(function () {
