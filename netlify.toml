@@ -1,5 +1,5 @@
 # Ensures the PDF attachment gets bundled together with the on-form function
 # (Netlify's function bundler only picks up JS/TS by default; non-code assets
 # need to be listed explicitly).
-[functions."on-form"]
+[functions."submission-created"]
   included_files = ["netlify/functions/assets/*.pdf"]
