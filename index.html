@@ -60,7 +60,6 @@
     { "@type": "Question", "name": "Kolik pojištění pohledávek stojí?", "acceptedAnswer": { "@type": "Answer", "text": "Cena se odvíjí od pojištěného obratu, oboru, teritoria odběratelů a škodní historie. Vždy proto nejdřív sestavíme srovnání konkrétních nabídek, než padne jakékoliv číslo." } },
     { "@type": "Question", "name": "Musím pojistit úplně všechny odběratele?", "acceptedAnswer": { "@type": "Answer", "text": "Většina produktů vyžaduje pojištění celého obratu nebo jasně vymezeného segmentu — jinak by šlo pojistit jen rizikové odběratele, což pojišťovny standardně neumožňují." } },
     { "@type": "Question", "name": "Kryje pojištění i situaci, kdy odběratel jen neplatí, ale není v insolvenci?", "acceptedAnswer": { "@type": "Answer", "text": "Ano, standardní produkty kryjí kromě insolvence i dlouhodobé prodlení po uplynutí sjednané čekací doby." } },
-    { "@type": "Question", "name": "Kolik stojí vaše služby jako zprostředkovatele?", "acceptedAnswer": { "@type": "Answer", "text": "Odměnu zprostředkovatele standardně hradí pojišťovna z pojistného. Klient za naši práci obvykle nic navíc neplatí." } },
     { "@type": "Question", "name": "Jak dlouho trvá bezplatný audit rizika?", "acceptedAnswer": { "@type": "Answer", "text": "Orientační výsledek auditu a srovnání nabídek pojišťoven obvykle dostanete do několika pracovních dnů od zaslání základních údajů o firmě a odběratelích." } }
   ]
 }
@@ -521,7 +520,7 @@
   /* offer / proc-credigo */
   .offer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
@@ -605,7 +604,6 @@
       <a href="#konfigurator">Konfigurátor</a>
       <a href="#riziko">Riziko</a>
       <a href="#princip">Princip</a>
-      <a href="#proc-intermediary">Proč zprostředkovatel</a>
       <a href="#trh">Pojistitelé</a>
       <a href="#proces">Postup</a>
       <a href="#faq">FAQ</a>
@@ -641,10 +639,6 @@
         <div class="value tnum">10–25 %</div>
       </div>
       <div class="ledger-row">
-        <div class="label"><b>Odměna zprostředkovatele</b>Standardně hrazena pojišťovnou z pojistného</div>
-        <div class="value">bez příplatku</div>
-      </div>
-      <div class="ledger-row">
         <div class="label"><b>Audit rizika</b>Bezplatný a nezávazný, bez ohledu na výsledek</div>
         <div class="value">zdarma</div>
       </div>
@@ -671,11 +665,6 @@
         <span class="chip">Zdarma</span>
         <h3>Kontrola odběratelů</h3>
         <p>Prověříme bonitu klíčových odběratelů a řekneme vám, u koho je riziko výpadku plateb reálné.</p>
-      </div>
-      <div class="offer-cell">
-        <span class="chip">Zdarma</span>
-        <h3>Porovnání pojišťoven</h3>
-        <p>Sestavíme srovnání nabídek od pojistitelů na trhu, aniž byste museli sami oslovovat každého zvlášť.</p>
       </div>
       <div class="offer-cell">
         <span class="chip">Zdarma</span>
@@ -831,31 +820,6 @@
   </div>
 </section>
 
-<section id="proc-intermediary">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Proč zprostředkovatel</div>
-      <div>
-        <h2>Nezávislé srovnání, ne nabídka jedné pojišťovny</h2>
-        <p class="support">Pojišťovna, u které si pojištění sjednáte napřímo, vám nabídne jen svůj vlastní produkt. Jako zprostředkovatel pro vás zdarma provedeme audit rizika a porovnáme podmínky napříč trhem, než se pro cokoliv rozhodnete.</p>
-      </div>
-    </div>
-    <div class="compare-wrap reveal">
-      <table class="compare">
-        <thead>
-          <tr><th></th><th>Napřímo u pojišťovny</th><th class="intermediary-col">Přes Credigo</th></tr>
-        </thead>
-        <tbody>
-          <tr><th scope="row">Nabídky ke srovnání</th><td class="direct">Jen jeden pojistitel</td><td class="intermediary">Srovnání napříč dostupnými pojistiteli</td></tr>
-          <tr><th scope="row">Vyjednání podmínek</th><td class="direct">Standardní sazebník</td><td class="intermediary">Individuální vyjednání limitů a sazby</td></tr>
-          <tr><th scope="row">Pomoc při škodě</th><td class="direct">Komunikace přímo s pojišťovnou</td><td class="intermediary">Poradíme, jak škodu doložit a projednat</td></tr>
-          <tr><th scope="row">Náklady pro klienta</th><td class="direct">—</td><td class="intermediary"><span class="yes">Bez příplatku</span> — odměnu hradí pojišťovna</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
 <section id="trh">
   <div class="wrap">
     <div class="section-head reveal">
@@ -866,7 +830,6 @@
       </div>
     </div>
     <div class="partners reveal">
-      <div class="partner-row partners-note">Ukázkový přehled trhu — doplňte, se kterými pojistiteli reálně spolupracujete.</div>
       <div class="partner-row">
         <div class="name">Allianz Trade</div>
         <div class="desc">Globální pojistitel obchodních pohledávek, dříve působící pod značkou Euler Hermes.</div>
@@ -903,8 +866,6 @@
     <ol class="proc-grid reveal">
       <li class="proc-item"><h3>Nezávazná poptávka</h3><p>Vyplníte základní údaje o obratu, oboru a struktuře odběratelů.</p></li>
       <li class="proc-item"><h3>Analýza portfolia</h3><p>Projdeme rizikovost jednotlivých odběratelů a nastavíme parametry poptávky u pojišťoven.</p></li>
-      <li class="proc-item"><h3>Poptávka u pojistitelů</h3><p>Oslovíme relevantní pojišťovny na trhu a vyžádáme konkrétní nabídky.</p></li>
-      <li class="proc-item"><h3>Porovnání a doporučení</h3><p>Nabídky srovnáme podle limitů, sazby a spoluúčasti a doporučíme řešení, které sedí vaší situaci.</p></li>
     </ol>
   </div>
 </section>
@@ -963,10 +924,6 @@
         <p>Ano, standardní produkty kryjí kromě insolvence i dlouhodobé prodlení po uplynutí sjednané čekací doby.</p>
       </details>
       <details class="faq-item">
-        <summary>Kolik stojí vaše služby jako zprostředkovatele?</summary>
-        <p>Odměnu zprostředkovatele standardně hradí pojišťovna z pojistného. Klient za naši práci obvykle nic navíc neplatí.</p>
-      </details>
-      <details class="faq-item">
         <summary>Jak dlouho trvá bezplatný audit rizika?</summary>
         <p>Orientační výsledek auditu a srovnání nabídek pojišťoven obvykle dostanete do několika pracovních dnů od zaslání základních údajů o firmě a odběratelích.</p>
       </details>
@@ -1018,8 +975,6 @@
           <div><dt>Sídlo</dt><dd>Platnéřská 88/9, Staré Město, 110 00 Praha</dd></div>
           <div><dt>Telefon</dt><dd><a href="tel:+420775961430" style="text-decoration:none;">+420 775 961 430</a></dd></div>
           <div><dt>E-mail</dt><dd><a href="mailto:info@credigo.cz" style="text-decoration:none;">info@credigo.cz</a></dd></div>
-          <div><dt>IČO</dt><dd class="placeholder">12345678</dd></div>
-          <div><dt>Registr ČNB</dt><dd class="placeholder">123456PA</dd></div>
         </dl>
       </div>
     </div>
@@ -1031,7 +986,7 @@
   <div class="wrap">
     <div>
       <div class="brand">Credigo</div>
-      <div class="legal">© 2026 Credigo. Nezávislý pojišťovací zprostředkovatel registrovaný u ČNB pod č. 123456PA. Obsah stránky je obecný přehled a nenahrazuje konkrétní pojistné podmínky.</div>
+      <div class="legal">© 2026 Credigo.</div>
     </div>
     <nav class="fnav">
       <a href="#konfigurator">Konfigurátor</a>
