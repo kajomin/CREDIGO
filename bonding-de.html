@@ -173,6 +173,7 @@
   .risk-cell h3 { font-size: 18px; margin-top: 8px; }
 
   .offer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .offer-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
   @media (max-width: 900px) { .offer-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 540px) { .offer-grid { grid-template-columns: 1fr; } }
   .offer-cell { background: var(--bg); padding: 28px 22px; display: flex; flex-direction: column; gap: 11px; }
@@ -372,7 +373,7 @@
           <tr><th scope="row">Auswirkung auf die Kreditlinie</th><td class="direct">Blockiert einen Teil Ihrer Bankkreditlinie</td><td class="intermediary">Kreditlinie bleibt frei</td></tr>
           <tr><th scope="row">Besicherung</th><td class="direct">Erfordert häufig eine Sicherheit oder blockierte Einlage</td><td class="intermediary">In der Regel auf Basis der Bonität, ohne Sicherheit</td></tr>
           <tr><th scope="row">Ausstellungsgeschwindigkeit</th><td class="direct">Abhängig vom Genehmigungsprozess der Bank</td><td class="intermediary">Oft schneller, außerhalb der Bankgenehmigung</td></tr>
-          <tr><th scope="row">Kosten für den Kunden</th><td class="direct">Gebühr an die Bank für Ausstellung und Verwaltung der Garantie</td><td class="intermediary">Prämie — den Vergleich der Angebote übernimmt der Vermittler ohne Aufpreis</td></tr>
+          <tr><th scope="row">Kosten für den Kunden</th><td class="direct">Gebühr an die Bank für Ausstellung und Verwaltung der Garantie</td><td class="intermediary">Prämie — ohne Aufpreis für den Kunden</td></tr>
         </tbody>
       </table>
     </div>
@@ -388,16 +389,11 @@
         <p class="support">Auch beim Bonding klären wir zuerst, was Sie wirklich brauchen, und suchen erst danach die Lösung — nicht umgekehrt.</p>
       </div>
     </div>
-    <div class="offer-grid reveal">
+    <div class="offer-grid cols-3 reveal">
       <div class="offer-cell">
         <span class="chip">Kostenlos</span>
         <h3>Bedarfsanalyse für Garantien</h3>
         <p>Wir prüfen Ihre aktuellen und geplanten Aufträge und sagen Ihnen, welche Arten und Höhen von Garantien Sie benötigen.</p>
-      </div>
-      <div class="offer-cell">
-        <span class="chip">Kostenlos</span>
-        <h3>Vergleich der Versicherer</h3>
-        <p>Wir erstellen einen Vergleich der Angebote von Versicherern, die Bonding anbieten, ohne dass Sie selbst jeden einzeln kontaktieren müssen.</p>
       </div>
       <div class="offer-cell">
         <span class="chip">Kostenlos</span>
@@ -407,7 +403,7 @@
       <div class="offer-cell">
         <span class="chip">Kostenlos</span>
         <h3>Empfohlene Lösung</h3>
-        <p>Auf Basis des Vergleichs empfehlen wir das Angebot, das am besten zu Art und Höhe Ihres Auftrags passt.</p>
+        <p>Auf Basis der Analyse empfehlen wir die Lösung, die am besten zu Art und Höhe Ihres Auftrags passt.</p>
       </div>
     </div>
     <div class="offer-foot reveal">
@@ -442,14 +438,14 @@
     <div class="section-head reveal">
       <div class="eyebrow">Ablauf</div>
       <div>
-        <h2>So läuft die Analyse und der Vergleich ab</h2>
+        <h2>So läuft die Analyse ab</h2>
       </div>
     </div>
     <ol class="proc-grid reveal">
       <li class="proc-item"><h3>Unverbindliche Anfrage</h3><p>Sie teilen uns Art und Höhe der benötigten Garantie mit.</p></li>
       <li class="proc-item"><h3>Bonitätsanalyse</h3><p>Wir prüfen die finanzielle Lage des Unternehmens und die Erfolgsbilanz abgeschlossener Aufträge.</p></li>
       <li class="proc-item"><h3>Anfrage bei Versicherern</h3><p>Wir kontaktieren Versicherer, die Bonding am Markt anbieten.</p></li>
-      <li class="proc-item"><h3>Vergleich und Empfehlung</h3><p>Wir vergleichen die Konditionen und empfehlen die passende Lösung.</p></li>
+      <li class="proc-item"><h3>Empfohlene Lösung</h3><p>Auf Basis der Analyse empfehlen wir die passende Lösung.</p></li>
     </ol>
   </div>
 </section>

@@ -173,6 +173,7 @@
   .risk-cell h3 { font-size: 18px; margin-top: 8px; }
 
   .offer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .offer-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
   @media (max-width: 900px) { .offer-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 540px) { .offer-grid { grid-template-columns: 1fr; } }
   .offer-cell { background: var(--bg); padding: 28px 22px; display: flex; flex-direction: column; gap: 11px; }
@@ -373,7 +374,7 @@
           <tr><th scope="row">Dopad na úvěrový rámec</th><td class="direct">Blokuje část úvěrového rámce u banky</td><td class="intermediary">Úvěrový rámec zůstává volný</td></tr>
           <tr><th scope="row">Zajištění</th><td class="direct">Často vyžaduje zástavu nebo blokaci vkladu</td><td class="intermediary">Obvykle na základě bonity firmy, bez zástavy</td></tr>
           <tr><th scope="row">Rychlost vystavení</th><td class="direct">Závisí na bankovním schvalovacím procesu</td><td class="intermediary">Často rychlejší, mimo bankovní schvalování</td></tr>
-          <tr><th scope="row">Náklady pro klienta</th><td class="direct">Poplatek bance za vystavení a vedení záruky</td><td class="intermediary">Pojistné — srovnání nabídek zajistí zprostředkovatel bez příplatku</td></tr>
+          <tr><th scope="row">Náklady pro klienta</th><td class="direct">Poplatek bance za vystavení a vedení záruky</td><td class="intermediary">Pojistné — bez příplatku pro klienta</td></tr>
         </tbody>
       </table>
     </div>
@@ -389,16 +390,11 @@
         <p class="support">I u bondingu nejdřív zjistíme, co skutečně potřebujete, a až pak hledáme řešení — ne naopak.</p>
       </div>
     </div>
-    <div class="offer-grid reveal">
+    <div class="offer-grid cols-3 reveal">
       <div class="offer-cell">
         <span class="chip">Zdarma</span>
         <h3>Analýza potřeby záruk</h3>
         <p>Projdeme vaše aktuální a plánované zakázky a řekneme vám, jaké typy a výše záruk budete potřebovat.</p>
-      </div>
-      <div class="offer-cell">
-        <span class="chip">Zdarma</span>
-        <h3>Porovnání pojišťoven</h3>
-        <p>Sestavíme srovnání nabídek od pojistitelů nabízejících bonding, aniž byste museli sami oslovovat každého zvlášť.</p>
       </div>
       <div class="offer-cell">
         <span class="chip">Zdarma</span>
@@ -408,7 +404,7 @@
       <div class="offer-cell">
         <span class="chip">Zdarma</span>
         <h3>Doporučené řešení</h3>
-        <p>Na základě srovnání vám doporučíme nabídku, která nejlíp odpovídá typu a výši vaší zakázky.</p>
+        <p>Na základě analýzy vám doporučíme řešení, které nejlíp odpovídá typu a výši vaší zakázky.</p>
       </div>
     </div>
     <div class="offer-foot reveal">
@@ -443,14 +439,14 @@
     <div class="section-head reveal">
       <div class="eyebrow">Postup</div>
       <div>
-        <h2>Jak probíhá audit a srovnání</h2>
+        <h2>Jak probíhá audit</h2>
       </div>
     </div>
     <ol class="proc-grid reveal">
       <li class="proc-item"><h3>Nezávazná poptávka</h3><p>Řeknete nám typ a výši potřebné záruky.</p></li>
       <li class="proc-item"><h3>Analýza bonity</h3><p>Projdeme finanční situaci firmy a historii realizovaných zakázek.</p></li>
       <li class="proc-item"><h3>Poptávka u pojistitelů</h3><p>Oslovíme pojišťovny, které bonding na trhu nabízejí.</p></li>
-      <li class="proc-item"><h3>Porovnání a doporučení</h3><p>Srovnáme podmínky a doporučíme řešení, které sedí vaší situaci.</p></li>
+      <li class="proc-item"><h3>Doporučení řešení</h3><p>Na základě analýzy doporučíme řešení, které sedí vaší situaci.</p></li>
     </ol>
   </div>
 </section>
