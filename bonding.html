@@ -54,7 +54,7 @@
     { "@type": "Question", "name": "Jaké typy záruk pojišťovny vystavují?", "acceptedAnswer": { "@type": "Answer", "text": "Nejčastější jsou nabídková jistota, záruka za řádné provedení, záruka za vrácení zálohy a záruka za odstranění vad. Konkrétní typ určuje podmínka v zadávací dokumentaci nebo smlouvě." } },
     { "@type": "Question", "name": "Potřebuji stejné zajištění jako u banky?", "acceptedAnswer": { "@type": "Answer", "text": "Obvykle ne ve stejné míře — pojišťovna vychází primárně z bonity firmy a historie realizovaných zakázek, ne z požadavku na zástavu nebo blokaci vkladu." } },
     { "@type": "Question", "name": "Jak rychle lze záruku vystavit?", "acceptedAnswer": { "@type": "Answer", "text": "Záleží na typu a výši záruky. U standardních záruk to bývá řádově dny až pár týdnů od dodání podkladů." } },
-    { "@type": "Question", "name": "Kolik stojí služby makléře?", "acceptedAnswer": { "@type": "Answer", "text": "Stejně jako u pojištění pohledávek — odměnu makléře standardně hradí pojišťovna z pojistného, klient obvykle nic navíc neplatí." } }
+    { "@type": "Question", "name": "Kolik stojí služby zprostředkovatele?", "acceptedAnswer": { "@type": "Answer", "text": "Stejně jako u pojištění pohledávek — odměnu zprostředkovatele standardně hradí pojišťovna z pojistného, klient obvykle nic navíc neplatí." } }
   ]
 }
 </script>
@@ -187,8 +187,8 @@
   .compare thead th { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--line-strong); }
   .compare tbody th { font-weight: 500; color: var(--text-soft); width: 26%; }
   .compare td.direct { color: var(--text-soft); }
-  .compare td.broker { color: var(--text); }
-  .compare thead th.broker-col { color: var(--accent); }
+  .compare td.intermediary { color: var(--text); }
+  .compare thead th.intermediary-col { color: var(--accent); }
   .compare-wrap { overflow-x: auto; border: 1px solid var(--line); }
 
   .proc-grid { list-style: none; margin: 0; padding: 0; counter-reset: proc; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
@@ -243,7 +243,7 @@
 <a class="skip-link" href="#main">Přeskočit na obsah</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="img/logo.png" alt="Credigo" class="brand-logo"><small>Makléř pojištění pohledávek a záruk</small></a>
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="Credigo" class="brand-logo"><small>Zprostředkovatel pojištění pohledávek a záruk</small></a>
     <nav class="main-nav">
       <a href="index.html">Pohledávky</a>
       <a href="#co-je-bonding">Co je bonding</a>
@@ -265,7 +265,7 @@
   <div class="wrap">
     <div>
       <h1>Záruka od pojišťovny se nezapočítává do vašeho úvěrového rámce.</h1>
-      <p class="lede">Bonding — pojištění záruk — nahrazuje bankovní záruky u veřejných zakázek, stavebních kontraktů a dodávek investičních celků. Jako nezávislý makléř porovnáme nabídky pojišťoven a záruku vám pomůžeme sjednat i spravovat po celou dobu její platnosti.</p>
+      <p class="lede">Bonding — pojištění záruk — nahrazuje bankovní záruky u veřejných zakázek, stavebních kontraktů a dodávek investičních celků. Jako nezávislý zprostředkovatel porovnáme nabídky pojišťoven a záruku vám pomůžeme sjednat i spravovat po celou dobu její platnosti.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#kontakt">Chci nabídku záruky</a>
         <a class="btn btn-ghost" href="#co-je-bonding">Jak bonding funguje</a>
@@ -282,7 +282,7 @@
         <div class="value">volný rámec</div>
       </div>
       <div class="ledger-row">
-        <div class="label"><b>Odměna makléře</b>Standardně hrazena pojišťovnou z pojistného</div>
+        <div class="label"><b>Odměna zprostředkovatele</b>Standardně hrazena pojišťovnou z pojistného</div>
         <div class="value">bez příplatku</div>
       </div>
       <div class="ledger-row">
@@ -368,13 +368,13 @@
     <div class="compare-wrap reveal">
       <table class="compare">
         <thead>
-          <tr><th></th><th>Bankovní záruka</th><th class="broker-col">Bonding (pojišťovna)</th></tr>
+          <tr><th></th><th>Bankovní záruka</th><th class="intermediary-col">Bonding (pojišťovna)</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Dopad na úvěrový rámec</th><td class="direct">Blokuje část úvěrového rámce u banky</td><td class="broker">Úvěrový rámec zůstává volný</td></tr>
-          <tr><th scope="row">Zajištění</th><td class="direct">Často vyžaduje zástavu nebo blokaci vkladu</td><td class="broker">Obvykle na základě bonity firmy, bez zástavy</td></tr>
-          <tr><th scope="row">Rychlost vystavení</th><td class="direct">Závisí na bankovním schvalovacím procesu</td><td class="broker">Často rychlejší, mimo bankovní schvalování</td></tr>
-          <tr><th scope="row">Náklady pro klienta</th><td class="direct">Poplatek bance za vystavení a vedení záruky</td><td class="broker">Pojistné — srovnání nabídek zajistí makléř bez příplatku</td></tr>
+          <tr><th scope="row">Dopad na úvěrový rámec</th><td class="direct">Blokuje část úvěrového rámce u banky</td><td class="intermediary">Úvěrový rámec zůstává volný</td></tr>
+          <tr><th scope="row">Zajištění</th><td class="direct">Často vyžaduje zástavu nebo blokaci vkladu</td><td class="intermediary">Obvykle na základě bonity firmy, bez zástavy</td></tr>
+          <tr><th scope="row">Rychlost vystavení</th><td class="direct">Závisí na bankovním schvalovacím procesu</td><td class="intermediary">Často rychlejší, mimo bankovní schvalování</td></tr>
+          <tr><th scope="row">Náklady pro klienta</th><td class="direct">Poplatek bance za vystavení a vedení záruky</td><td class="intermediary">Pojistné — srovnání nabídek zajistí zprostředkovatel bez příplatku</td></tr>
         </tbody>
       </table>
     </div>
@@ -483,8 +483,8 @@
         <p>Záleží na typu a výši záruky. U standardních záruk to bývá řádově dny až pár týdnů od dodání podkladů.</p>
       </details>
       <details class="faq-item">
-        <summary>Kolik stojí služby makléře?</summary>
-        <p>Stejně jako u pojištění pohledávek — odměnu makléře standardně hradí pojišťovna z pojistného, klient obvykle nic navíc neplatí.</p>
+        <summary>Kolik stojí služby zprostředkovatele?</summary>
+        <p>Stejně jako u pojištění pohledávek — odměnu zprostředkovatele standardně hradí pojišťovna z pojistného, klient obvykle nic navíc neplatí.</p>
       </details>
     </div>
   </div>
@@ -533,7 +533,7 @@
       </form>
       <div class="contact-card">
         <h3 style="font-size:19px;">Credigo</h3>
-        <p style="color:var(--text-soft); font-size:14px; margin-top:6px;">Nezávislý makléř pojištění pohledávek a záruk</p>
+        <p style="color:var(--text-soft); font-size:14px; margin-top:6px;">Nezávislý zprostředkovatel pojištění pohledávek a záruk</p>
         <dl>
           <div><dt>Sídlo</dt><dd>Platnéřská 88/9, Staré Město, 110 00 Praha</dd></div>
           <div><dt>Telefon</dt><dd><a href="tel:+420775961430" style="text-decoration:none;">+420 775 961 430</a></dd></div>

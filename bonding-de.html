@@ -54,7 +54,7 @@
     { "@type": "Question", "name": "Welche Arten von Garantien stellen Versicherer aus?", "acceptedAnswer": { "@type": "Answer", "text": "Am häufigsten sind Bietungsgarantie, Erfüllungsgarantie, Anzahlungsgarantie und Gewährleistungsgarantie. Die konkrete Art ergibt sich meist aus den Ausschreibungsunterlagen oder dem Vertrag." } },
     { "@type": "Question", "name": "Benötige ich die gleiche Besicherung wie bei einer Bank?", "acceptedAnswer": { "@type": "Answer", "text": "In der Regel nicht im gleichen Umfang — der Versicherer stützt sich vor allem auf die Bonität des Unternehmens und die Erfolgsbilanz abgeschlossener Aufträge, nicht auf eine Sicherheit oder eine blockierte Einlage." } },
     { "@type": "Question", "name": "Wie schnell kann eine Garantie ausgestellt werden?", "acceptedAnswer": { "@type": "Answer", "text": "Das hängt von Art und Höhe ab. Bei Standardgarantien dauert es meist einige Tage bis wenige Wochen ab Einreichung der Unterlagen." } },
-    { "@type": "Question", "name": "Wie viel kosten die Dienstleistungen des Maklers?", "acceptedAnswer": { "@type": "Answer", "text": "Wie bei der Warenkreditversicherung — die Maklerprovision wird in der Regel vom Versicherer aus der Prämie bezahlt, Kunden zahlen in der Regel nichts zusätzlich." } }
+    { "@type": "Question", "name": "Wie viel kosten die Dienstleistungen des Vermittlers?", "acceptedAnswer": { "@type": "Answer", "text": "Wie bei der Warenkreditversicherung — die Vermittlerprovision wird in der Regel vom Versicherer aus der Prämie bezahlt, Kunden zahlen in der Regel nichts zusätzlich." } }
   ]
 }
 </script>
@@ -187,8 +187,8 @@
   .compare thead th { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--line-strong); }
   .compare tbody th { font-weight: 500; color: var(--text-soft); width: 26%; }
   .compare td.direct { color: var(--text-soft); }
-  .compare td.broker { color: var(--text); }
-  .compare thead th.broker-col { color: var(--accent); }
+  .compare td.intermediary { color: var(--text); }
+  .compare thead th.intermediary-col { color: var(--accent); }
   .compare-wrap { overflow-x: auto; border: 1px solid var(--line); }
 
   .proc-grid { list-style: none; margin: 0; padding: 0; counter-reset: proc; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
@@ -243,7 +243,7 @@
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="pojisteni-pohledavek-de.html"><img src="img/logo.png" alt="Credigo" class="brand-logo"><small>Makler für Warenkredit- &amp; Kautionsversicherung</small></a>
+    <a class="brand" href="pojisteni-pohledavek-de.html"><img src="img/logo.png" alt="Credigo" class="brand-logo"><small>Vermittler für Warenkredit- &amp; Kautionsversicherung</small></a>
     <nav class="main-nav">
       <a href="pojisteni-pohledavek-de.html">Forderungen</a>
       <a href="#co-je-bonding">Was ist Bonding</a>
@@ -264,7 +264,7 @@
   <div class="wrap">
     <div>
       <h1>Eine Garantie vom Versicherer belastet nicht Ihre Kreditlinie.</h1>
-      <p class="lede">Bonding — die Kautionsversicherung — ersetzt Bankgarantien bei öffentlichen Ausschreibungen, Bauverträgen und Lieferungen von Investitionsgütern. Als unabhängiger Makler vergleichen wir Angebote der Versicherer und helfen Ihnen, die Garantie abzuschließen und während ihrer gesamten Laufzeit zu verwalten.</p>
+      <p class="lede">Bonding — die Kautionsversicherung — ersetzt Bankgarantien bei öffentlichen Ausschreibungen, Bauverträgen und Lieferungen von Investitionsgütern. Als unabhängiger Vermittler vergleichen wir Angebote der Versicherer und helfen Ihnen, die Garantie abzuschließen und während ihrer gesamten Laufzeit zu verwalten.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#kontakt">Garantieangebot anfragen</a>
         <a class="btn btn-ghost" href="#co-je-bonding">So funktioniert Bonding</a>
@@ -281,7 +281,7 @@
         <div class="value">Kreditlinie bleibt frei</div>
       </div>
       <div class="ledger-row">
-        <div class="label"><b>Maklerprovision</b>In der Regel vom Versicherer aus der Prämie bezahlt</div>
+        <div class="label"><b>Vermittlerprovision</b>In der Regel vom Versicherer aus der Prämie bezahlt</div>
         <div class="value">ohne Aufpreis</div>
       </div>
       <div class="ledger-row">
@@ -367,13 +367,13 @@
     <div class="compare-wrap reveal">
       <table class="compare">
         <thead>
-          <tr><th></th><th>Bankgarantie</th><th class="broker-col">Bonding (Versicherer)</th></tr>
+          <tr><th></th><th>Bankgarantie</th><th class="intermediary-col">Bonding (Versicherer)</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Auswirkung auf die Kreditlinie</th><td class="direct">Blockiert einen Teil Ihrer Bankkreditlinie</td><td class="broker">Kreditlinie bleibt frei</td></tr>
-          <tr><th scope="row">Besicherung</th><td class="direct">Erfordert häufig eine Sicherheit oder blockierte Einlage</td><td class="broker">In der Regel auf Basis der Bonität, ohne Sicherheit</td></tr>
-          <tr><th scope="row">Ausstellungsgeschwindigkeit</th><td class="direct">Abhängig vom Genehmigungsprozess der Bank</td><td class="broker">Oft schneller, außerhalb der Bankgenehmigung</td></tr>
-          <tr><th scope="row">Kosten für den Kunden</th><td class="direct">Gebühr an die Bank für Ausstellung und Verwaltung der Garantie</td><td class="broker">Prämie — den Vergleich der Angebote übernimmt der Makler ohne Aufpreis</td></tr>
+          <tr><th scope="row">Auswirkung auf die Kreditlinie</th><td class="direct">Blockiert einen Teil Ihrer Bankkreditlinie</td><td class="intermediary">Kreditlinie bleibt frei</td></tr>
+          <tr><th scope="row">Besicherung</th><td class="direct">Erfordert häufig eine Sicherheit oder blockierte Einlage</td><td class="intermediary">In der Regel auf Basis der Bonität, ohne Sicherheit</td></tr>
+          <tr><th scope="row">Ausstellungsgeschwindigkeit</th><td class="direct">Abhängig vom Genehmigungsprozess der Bank</td><td class="intermediary">Oft schneller, außerhalb der Bankgenehmigung</td></tr>
+          <tr><th scope="row">Kosten für den Kunden</th><td class="direct">Gebühr an die Bank für Ausstellung und Verwaltung der Garantie</td><td class="intermediary">Prämie — den Vergleich der Angebote übernimmt der Vermittler ohne Aufpreis</td></tr>
         </tbody>
       </table>
     </div>
@@ -482,8 +482,8 @@
         <p>Das hängt von Art und Höhe ab. Bei Standardgarantien dauert es meist einige Tage bis wenige Wochen ab Einreichung der Unterlagen.</p>
       </details>
       <details class="faq-item">
-        <summary>Wie viel kosten die Dienstleistungen des Maklers?</summary>
-        <p>Wie bei der Warenkreditversicherung — die Maklerprovision wird in der Regel vom Versicherer aus der Prämie bezahlt, Kunden zahlen in der Regel nichts zusätzlich.</p>
+        <summary>Wie viel kosten die Dienstleistungen des Vermittlers?</summary>
+        <p>Wie bei der Warenkreditversicherung — die Vermittlerprovision wird in der Regel vom Versicherer aus der Prämie bezahlt, Kunden zahlen in der Regel nichts zusätzlich.</p>
       </details>
     </div>
   </div>
@@ -532,7 +532,7 @@
       </form>
       <div class="contact-card">
         <h3 style="font-size:19px;">Credigo</h3>
-        <p style="color:var(--text-soft); font-size:14px; margin-top:6px;">Unabhängiger Makler für Warenkredit- und Kautionsversicherung</p>
+        <p style="color:var(--text-soft); font-size:14px; margin-top:6px;">Unabhängiger Vermittler für Warenkredit- und Kautionsversicherung</p>
         <dl>
           <div><dt>Sitz</dt><dd>Platnéřská 88/9, Staré Město, 110 00 Prag</dd></div>
           <div><dt>Telefon</dt><dd><a href="tel:+420775961430" style="text-decoration:none;">+420 775 961 430</a></dd></div>
