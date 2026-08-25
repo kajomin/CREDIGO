@@ -8,18 +8,6 @@
 // credigo.cz domain in Resend (https://resend.com) so mail can be sent
 // as info@credigo.cz.
 
-const fs = require('fs');
-const path = require('path');
-
-const PDF_PATH = path.join(__dirname, 'assets', 'credigo-prehled.pdf');
-
-let pdfBase64 = null;
-try {
-  pdfBase64 = fs.readFileSync(PDF_PATH).toString('base64');
-} catch (err) {
-  console.error('Could not read PDF attachment, sending emails without it:', err);
-}
-
 const MESSAGES = {
   poptavka: {
     subject: 'Potvrzení přijetí poptávky — Credigo',
@@ -99,12 +87,7 @@ exports.handler = async (event) => {
       from: 'Credigo <info@credigo.cz>',
       to: [toEmail],
       subject: msg.subject,
-      html,
-      ...(pdfBase64 && {
-        attachments: [
-          { filename: 'Credigo-prehled-sluzeb.pdf', content: pdfBase64 }
-        ]
-      })
+      html
     })
   });
 
